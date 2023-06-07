@@ -1,5 +1,5 @@
 # Backend infrastructure
-
+![[FLWSB-Backend.png]]
 - The backend for the FLWSB project consists of the following applications:
 	- Influxdb: open source time series database
 		- Used to store data gathered by the sensors & weather station
