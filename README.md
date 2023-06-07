@@ -11,6 +11,7 @@
 - [Installation via Ansible](./backend/ansible.md)
 - [Influxdb](./backend/influxdb.md)
 - [MQTT](./backend/mqtt.md)
+- [API](./backend/api.md)
 
 ## Frontend
 
