@@ -13,3 +13,6 @@ used code:
 [LoraSend_every_minute.ino](./LoraSend_every_minute.ino)
 
 alterations to the used library (not necessary): [alterations-RN2483-library.md](./alterations-RN2483-library.md)
+
+For connection to The Things Network see
+[practical-guide](../practical-guide/guide.md)
