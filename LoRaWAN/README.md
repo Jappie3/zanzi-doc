@@ -7,7 +7,6 @@ Some alterations to the existing SAMDaaNo library where necessary. On the first 
 
 ## Adding LoRa functionality to the board
 explanation: 
-
 [LoRa-functionality.md](./LoRa-functionality.md)
 
 used code: 
