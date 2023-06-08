@@ -18,7 +18,7 @@ When the board is powercycled, the counter is likely reset and does not match th
 
 By switching over to OTAA this issue was solved. The resulting code for LoRaWAN tests was the following:
 
-## LoRa-send-every-minute.ino
+### LoRa-send-every-minute.ino
 
 #### 1.	Include the necessary library and set used variables. 
 The appEui (which is also called JoinEui) is set to 0x0. This is the default when no other appEui is provided by the manufacturer. The appKey is specific to the application in The Thing Network. It is used by the application to decrypt messages and it is strongly recommended to make it unique for every end-device. 
