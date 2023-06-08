@@ -1,4 +1,4 @@
-## Adding LoRa functionality to the board
+# Adding LoRa functionality to the board
 Our SAMDaaNo can communicate over LoRaWAN using it’s on board RN2483 LoRa-module. The CPU on the SAMDaaNo21 is connected with this module using a serial connection (UART). The CPU and the module can communicate by sending strings and bytes to each other. The RN2483 is operated by sending commands in the form of strings. These commands are predefined and can be found in RN2483 LoRa TM Technology Module Command Reference User’s guide.
 
 ## Library 
@@ -18,7 +18,7 @@ When the board is powercycled, the counter is likely reset and does not match th
 
 By switching over to OTAA this issue was solved. The resulting code for LoRaWAN tests was the following:
 
-### LoRa-send-every-minute.ino
+## LoRa-send-every-minute.ino
 
 #### 1.	Include the necessary library and set used variables. 
 The appEui (which is also called JoinEui) is set to 0x0. This is the default when no other appEui is provided by the manufacturer. The appKey is specific to the application in The Thing Network. It is used by the application to decrypt messages and it is strongly recommended to make it unique for every end-device. 
