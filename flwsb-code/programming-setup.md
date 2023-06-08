@@ -25,9 +25,9 @@ This will install OpenOCD inside the `MINGW64` terminal. Use this terminal every
 | VTG | 1 | 3V3 |
 | GND | 3 | GND |
 
-3. Clone this github [ArduinoCore-samd](https://github.com/DaanDekoningKrekels/ArduinoCore-samd/) to any convenient location on your machine
+3. Clone this github [ArduinoCore-samd](https://github.com/JazzyBee01/ArduinoCore-samd) to any convenient location on your machine
 ```
-   git clone https://github.com/DaanDekoningKrekels/ArduinoCore-samd.git
+   git clone https://github.com/JazzyBee01/ArduinoCore-samd.git
 ```
 4. Navigate to the cloned repository, to the `bootloaders/samdaano21` directory while you are in the `MINGW64` terminal
 5. Execute the following command: 
@@ -48,9 +48,9 @@ git clone https://github.com/arduino/ArduinoCore-API.git
 ```
 cd <SKETCHBOOK>/hardware/arduino-git
 ``` 
-3. Clone this repo: [ArduinoCore-SAMD](git clone https://github.com/DaanDekoningKrekels/ArduinoCore-samd.git samd) into the `arduino-git` directory
+3. Clone this repo: [ArduinoCore-samd](https://github.com/JazzyBee01/ArduinoCore-samd) into the `arduino-git` directory
 ```
-git clone https://github.com/DaanDekoningKrekels/ArduinoCore-samd.git
+git clone https://github.com/JazzyBee01/ArduinoCore-samd.git
 ``` 
 4. Open Arduino IDE and click `File > Preferences`
 5. Click the button next to `Additional Boards Manager URLs`
@@ -58,7 +58,7 @@ git clone https://github.com/DaanDekoningKrekels/ArduinoCore-samd.git
 7. Save preferences, then open the Boards Manager
 8. Install the Arduino SAMD Boards package. Use version 1.6.2 or higher.
 9. Install the MattairTech SAM D|L|C Core for Arduino package and close Boards Manager after install has finished.
-Attention: this concludes the setup for Arduino IDE, but it might still not work. This can be caused because the wrong version of Bossac is being used. Bossac is the programming utility tool that Arduino IDE uses to upload to the SAMDaaNo21. The installed version of Bossac should be MattairTech's fork of bossac that supports the SAMD21G16A. 
+Attention: this concludes the setup for Arduino IDE, but it might still not work. This can be caused because the wrong version of Bossac is being used. Bossac is the programming utility tool that Arduino IDE uses to upload to the SAMDaaNo21. The installed version of Bossac should be MattairTech's fork of bossac that supports the ATSAMD21G16A. 
 If this is not the case, get the bossac executable from MattairTech and replace the one in your Arduino IDE installation. This is located under `C:\Program files (x86)\Arduino15\` on Windows and under `/home/<username>/.arduino15` on Linux. 
 Then continue to `packages/arduino/tools/bossac/` and replace the bossac utility with the version from Mattairtech.
 
@@ -111,9 +111,9 @@ This section describes the work done to add the SAMDaaNo21 to PlatformIO. Howeve
 }
 ``` 
 
-4. Clone this [repository](https://github.com/DaanDekoningKrekels/ArduinoCore-samd/) if you haven't already: 
+4. Clone this [repository](https://github.com/JazzyBee01/ArduinoCore-samd) if you haven't already: 
 ``` 
-git clone https://github.com/DaanDekoningKrekels/ArduinoCore-samd.git
+git clone https://github.com/JazzyBee01/ArduinoCore-samd.git
 ``` 
 5. In the `.platformio` folder, navigate to `framework-arduino-samd` and place the contents of the ArduinoCore-samd repository in the directory
 6. Download the bossac tool from one of these links (whichever is applicable): 
@@ -131,11 +131,12 @@ git clone https://github.com/DaanDekoningKrekels/ArduinoCore-samd.git
    board = samdaano21
    framework = arduino
    
-   board_build.variants_dir = C:\folders\github-repos\ArduinoCore-samd\variants
+   board_build.variants_dir = <path-to-variants-directory>
    board_build.variant = samdaano21
    
    platform_packages =
-    framework-arduino-samd@file://C:\folders\github-repos\ArduinoCore-samd
-    tool-bossac@file://C:\folders\vakken\iot-project\bossac-versions\tool-bossac
+    framework-arduino-samd@file://<path-to-repo-directory>
+	tool-bossac@file://<path-to-bossac-tool-directory>
 ```
+Edit the paths so they match with the path to the ArduinoCore-samd repository and the location of the bossac executable on your machine. 
 After this you should be able to upload until the error where it's unable to find the correct device
