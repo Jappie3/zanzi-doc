@@ -16,6 +16,7 @@ The objective of the project was to improve on what the students made last year 
 - [Installation via Ansible](./backend/ansible.md)
 - [Influxdb](./backend/influxdb.md)
 - [MQTT](./backend/mqtt.md)
+- [API](./backend/api.md)
 
 ## Frontend
 
