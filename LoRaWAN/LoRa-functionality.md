@@ -20,14 +20,26 @@ By switching over to OTAA this issue was solved. The resulting code for LoRaWAN 
 
 ### LoRa-send-every-minute.ino
 
+[LoraSend_every_minute.ino](./LoraSend_every_minute.ino)
+
 #### 1.	Include the necessary library and set used variables. 
 The appEui (which is also called JoinEui) is set to 0x0. This is the default when no other appEui is provided by the manufacturer. The appKey is specific to the application in The Thing Network. It is used by the application to decrypt messages and it is strongly recommended to make it unique for every end-device. 
 
 ![afbeelding](https://github.com/Jappie3/zanzi-doc/assets/91837988/179ce4a5-b392-4517-bc65-9949d02d9da7)
 
 #### 2. Setup
+
 ![afbeelding](https://github.com/Jappie3/zanzi-doc/assets/91837988/6a1b3532-b81d-4e57-a2b6-332ae8dbd5b0)
 
 #### 3.	Define initialize_radio()
+
+![afbeelding](https://github.com/Jappie3/zanzi-doc/assets/91837988/67e7a261-a012-43c9-8fa6-4fca36019bc5)
+
 #### 4.	Loop()
+
+![afbeelding](https://github.com/Jappie3/zanzi-doc/assets/91837988/d6d0f40d-4c48-4006-bb54-7bddf1cad51a)
+
 #### 5.	Define led_on() and led_off()
+This code is from the example code of the RN2483 library but wasn't actually used becasue there is no on board LED on the SAMDaaNo21 for this functionality.
+
+![afbeelding](https://github.com/Jappie3/zanzi-doc/assets/91837988/714b46d0-3b6d-48f9-915b-c3e1d42ffb5c)
