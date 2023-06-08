@@ -11,6 +11,7 @@ Step 1: Go to the application where you want to add your board. If you don’t h
 Step 2: Click on register a device. 
 ![afbeelding](https://github.com/Jappie3/zanzi-doc/assets/91837988/f6fb200f-c5c3-499a-a0ab-25645f7850c3)
 Step 3: Choose the following configurations and click on confirm next to the JoinEUI.
+
 ![afbeelding](https://github.com/Jappie3/zanzi-doc/assets/91837988/030bd5fb-3ab5-41c9-9bd0-b9157fd71f7f)
 
 Step 4: Press generate next to AppKey. This key should be unique to every device.
