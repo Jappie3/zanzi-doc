@@ -1,11 +1,4 @@
-# Practical guide
-
-## Writing the bootloader to a SAMDaaNo21
-...
-## Connecting the SAMDaaNo21 to the arduino IDE
-...
-
-## Adding a SAMDaaNo To The Things Network
+# Adding a SAMDaaNo To The Things Network
 Step 1: Go to the application where you want to add your board. If you don’t have an application linked to your account, make one.
 
 Step 2: Click on register a device. 
