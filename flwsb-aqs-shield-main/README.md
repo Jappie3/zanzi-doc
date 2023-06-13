@@ -1,6 +1,8 @@
 # Air quality sensor shield
 Flexible LoRaWAN Sensor Board - Air quality sensors shield
 
+For the project we made a seperate sensorboard wich contains all the sensors we used for the project. The purpose of this connector board is to connect all sensors to the main FLWSB. The FLWSB can collect the data from the sensors on this board and send this data over lorawan.
+
 # Schematic
 The schematic for the sensor shield was made using the reference schematics from the datasheets of the sensors. By adding female headers we can connect the main board to the sensorboard by using a male-female shield system. 
 Four mounting holes were added to mount the board in an enclosure.
@@ -8,7 +10,6 @@ Four mounting holes were added to mount the board in an enclosure.
 ![Connectorboard](assets/sensorboard.svg 'Figuur 1: Connectorboard')
 
 # PCB
-For the project we made a seperate sensorboard wich contains all the sensors we used for the project. The purpose of this connector board is to connect all sensors to the main FLWSB. The FLWSB can collect the data drom the sensors on this board and send this data over lorawan.
 
 The board contains following sensors to measure differnent parameters of airquality: 
   - BME280 (relative humidity and temperature 3,3V - I2C)
