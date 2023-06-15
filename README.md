@@ -37,11 +37,13 @@ The objective of the project was to improve on what the students made last year 
 - [Testboard](./flwsb-testboard-main/README.md)
 - [Adapter board Raspberry Pi](./ic880a-adapter-raspberry-master-main/README.md)
 
+## FLWSB Code
+
+- [Setup process](./flwsb-code/programming-setup.md)
+- [Sensors](./flwsb-code/sensors.md)
+- [LoRaWAN overview](./LoRaWAN/README.md)
+
 ## Gateway
 
 - [BOM](./gateway/BOM.md)
 - [Installation](./gateway/Installation.md)
-
-## LoRaWAN
-
-- [LoRaWAN overview](./LoRaWAN/README.md)
