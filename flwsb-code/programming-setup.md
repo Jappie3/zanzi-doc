@@ -139,4 +139,4 @@ git clone https://github.com/JazzyBee01/ArduinoCore-samd.git
 	tool-bossac@file://<path-to-bossac-tool-directory>
 ```
 Edit the paths so they match with the path to the ArduinoCore-samd repository and the location of the bossac executable on your machine. 
-After this you should be able to upload until the error where it's unable to find the correct device
+After this you should be able to upload until the error where it's unable to find the correct device.
