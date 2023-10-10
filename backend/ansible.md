@@ -81,7 +81,7 @@ $ tree -L 4
 ## 2. Some background on Ansible and Docker
 
 - In [backend.md](./backend.md) you can read more about the applications that make up the backend, this part will go in detail about the installation and configuration of the server
-- There is an Ansible playbook for configuring the server, which can be run with `ansible-playbook -K -i ansible.cfg FLWSB-backend-ansible.yaml`
+- There is an Ansible playbook for configuring the server, which can be run with `ansible-playbook -K -i hosts FLWSB-backend-ansible.yaml`
 
 ### Ansible
 
